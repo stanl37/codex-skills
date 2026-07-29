@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Jupyter Notebooks"
+  short_description: "Safely edit, execute, and validate notebooks"
+  default_prompt: "Use $manage-jupyter-notebooks to inspect, update, execute, and validate this Jupyter notebook."
