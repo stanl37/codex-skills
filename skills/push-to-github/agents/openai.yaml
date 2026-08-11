@@ -1,0 +1,4 @@
+interface:
+  display_name: "Push to GitHub"
+  short_description: "Initialize, review, commit, and push Git changes"
+  default_prompt: "Use $push-to-github to initialize if needed, review all current Git changes, commit them, and push the repository."
