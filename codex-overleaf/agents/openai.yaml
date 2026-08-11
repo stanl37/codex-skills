@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Overleaf"
+  short_description: "Safely sync local workspaces with Overleaf"
+  default_prompt: "Use $codex-overleaf to sync this workspace with my Overleaf project."
