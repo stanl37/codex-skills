@@ -29,19 +29,18 @@ Give Codex this prompt:
 
 ```text
 Use $skill-installer to install the skill from
-https://github.com/stanl37/manage-jupyter-notebooks.
-The skill is at the repository root and should be named
-manage-jupyter-notebooks.
+https://github.com/stanl37/codex-skills/tree/main/manage-jupyter-notebooks
 ```
 
 The skill will be available to Codex on the next turn.
 
 ### Install manually
 
-Clone the repository into your personal Codex skills directory:
+Clone the monorepo, then copy this skill into your personal Codex skills directory:
 
 ```bash
-git clone https://github.com/stanl37/manage-jupyter-notebooks.git \
+git clone https://github.com/stanl37/codex-skills.git
+cp -R codex-skills/manage-jupyter-notebooks \
   "${CODEX_HOME:-$HOME/.codex}/skills/manage-jupyter-notebooks"
 ```
 
