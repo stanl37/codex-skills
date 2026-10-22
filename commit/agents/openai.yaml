@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit"
+  short_description: "Review and commit Git changes without pushing"
+  default_prompt: "Use $commit to review all current Git changes and commit them locally without pushing."
