@@ -28,9 +28,27 @@ Invoking `$push-to-github` or otherwise explicitly requesting this skill constit
 3. Run `git add -A` to stage all changes.
 4. Review `git diff --cached --stat` and `git diff --cached` to understand all staged changes since `HEAD`.
 5. If nothing is staged, stop and report that there is nothing to commit.
-6. Generate a descriptive but concise commit message of one or two lines. Summarize the purpose of the staged changes and their most important effect; do not invent details not supported by the diff.
+6. Generate a concise commit message using the naming convention below. Summarize the purpose and most important effect of the staged changes; do not invent details not supported by the diff.
 7. Run `git commit -m "<commit message>"`.
 8. If the commit fails, stop and report the failure. Do not push.
+
+## Commit naming
+
+Follow [AA's GitHub Naming Conventions](https://www.notion.so/84578c5dd8d84ab0bccdcbd61ff0dc15): use Conventional Commits where possible.
+
+- Format the title as `<type>(<scope>): <summary>`. The scope is optional; use the component affected when it adds useful context.
+- Use `feat` for a new feature and `fix` for a bug correction. Use `refactor`, `docs`, `test`, `build`, `ci`, `chore`, `style`, or `perf` when one of those more accurately describes the change.
+- For a breaking change, append `!` after the type or scope and explain the incompatibility.
+- Describe the concrete change in a short, active summary. Add a brief body, separated by a blank line, when the reason or important effect needs explanation.
+
+Examples:
+
+```text
+feat(gdp_pdf): add an agentic judge
+docs(push-to-github): adopt AA commit naming conventions
+```
+
+AA's published guidance primarily concerns the final merge commit, which uses the PR title. This workflow also uses the same naming style for new local commits; it does not require every intermediate commit in an existing branch to be renamed.
 
 ## Remote creation and push
 
